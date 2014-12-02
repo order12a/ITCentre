@@ -2,7 +2,7 @@ package com.week1.lesson1;
 
 public class Task6 {
 	public static void main(String [] args) {
-		System.out.println(Task6.myIndexOf("My new string", "new"));
+		System.out.println(Task6.myIndexOf("newMy new string new new", "zero"));
 		
 	}
 
@@ -13,10 +13,9 @@ public class Task6 {
 			
 			for (int j = 0; j < s2.length(); j++) {
 				if (s1.charAt(i) == s2.charAt(j)) {
-					a = i;
-					
+					return i;
+//					a++;
 				}
-				break;
 			}
 				
 			} 
@@ -24,7 +23,9 @@ public class Task6 {
 			System.out.println("There is no string s2 in s1");
 			return -1;
 		}
-		System.out.println("We have inner string s2 at position: " + a);
-		return a;	
+		
+//		a = a / (s2.length());
+		return -1;
+		
 	}
 }
