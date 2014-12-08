@@ -14,11 +14,11 @@ public class Lift {
 			
 		if (countHuman <= liftCapacity) {
 			
-			if (currentFloor == 0 && nextFloor != 0 && counterTillRepair <= 1000) {
+			if (currentFloor == 0 && nextFloor != 0 && counterTillRepair < 1000) {
 				totalNumberOfPeople = totalNumberOfPeople + countHuman;				
 			}
 			
-			if (counterTillRepair <= 1000) {				
+			if (counterTillRepair < 1000) {				
 				if (nextFloor != currentFloor) {			
 					
 					if (currentFloor < nextFloor) {						
@@ -40,7 +40,7 @@ public class Lift {
 				System.out.println("Need repair!");
 			}
 			
-			if (currentFloor == 0 && counterTillRepair <= 1000) {
+			if (currentFloor == 0 && counterTillRepair < 1000) {
 				totalNumberOfPeople = totalNumberOfPeople - countHuman;
 			}
 		}else{

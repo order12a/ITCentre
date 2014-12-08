@@ -21,7 +21,7 @@ public class MainLift {
 		
 		
 		
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 10000; i++) {
 			int floor = (int)(Math.random() * 10);
 			int humans = (int)(Math.random() * 10);
 			System.out.println("Next floor - " + floor + " and people in lift - " + humans);
