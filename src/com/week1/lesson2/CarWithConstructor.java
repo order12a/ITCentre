@@ -1,6 +1,6 @@
 package com.week1.lesson2;
 
-public class Constructor {
+public class CarWithConstructor {
 	String number;
 	String color;
 	String state = "stopped";
@@ -9,15 +9,15 @@ public class Constructor {
 		System.out.println("Я авто с номером " + number + " и цветом " + color);
 	}
 
-	public Constructor() {
+	public CarWithConstructor() {
 
 	}
 
-	public Constructor(String n) {
+	public CarWithConstructor(String n) {
 		number = n;
 	}
 
-	public Constructor(String number, String c) {
+	public CarWithConstructor(String number, String c) {
 		this.number = number;
 		color = c;
 	}

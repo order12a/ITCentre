@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 
-public class Sample {
+public class Task1 {
  public static void main(String[] args) throws Exception{
 
   FileWriter fw = new FileWriter("file1.txt");
