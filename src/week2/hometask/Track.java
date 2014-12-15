@@ -5,7 +5,9 @@ public class Track {
 	private String state = "stopped";
 	private Car car;
 	
+	
 	public Track() {
+		System.out.println("Track created");
 	}
 		
 	public Track(String number) {
@@ -27,6 +29,26 @@ public class Track {
 		} else {		
 			System.out.println("Track number: " + number + " started stopped");
 			state = action;
+		}
+	}
+	
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public void unsetCar() {
+		car = null;
+	}
+	
+	public boolean hasCar() {
+		if (!car.equals(null)) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }

@@ -5,7 +5,20 @@ public class Car {
 	private String number;
 	private String color;
 	private Track track;
+	private static int count;	
 	
+	public Car () {
+		count++;
+	}
+	
+	public Car(String carModel, String number, String color) {
+		this.carModel = carModel;
+		this.number = number;
+		this.color = color;
+		System.out.println("Params: " + carModel + " " + number + " " + color);
+		count++;
+	}
+
 	public Track getTrack() {
 		return track;
 	}
@@ -41,12 +54,8 @@ public class Car {
 	public void setColor(String color) {
 		this.color = color;
 	}
-
-	private static int count;
 	
-	public Car () {
-		count++;
-	}
+
 
 	public String getCarModel() {
 		return carModel;
