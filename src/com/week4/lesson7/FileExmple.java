@@ -94,7 +94,7 @@ public class FileExmple {
 		
 		for (int i = 0; i < dirs.size(); i++){
 			if (dirs.get(i).isDirectory()) {
-				dirs.add(dirs.get(i).listFiles());
+//				dirs.add(dirs.get(i).listFiles());
 			}
 		}
 		
