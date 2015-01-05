@@ -42,7 +42,7 @@ public class ArrayTask {
 			}
 			
 		}else{
-			System.out.println("No minus values!");
+			System.out.println("Не верный размер массиваа");
 			return array;			
 		}
 		return array;
